@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,9 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	이름 : ${product.name } <br>
-	가격 : ${product.price }
-	
+	이름 : ${product.name }
+	<br> 가격 : ${product.price } 
 	${product } ${vo}
 </body>
 </html>

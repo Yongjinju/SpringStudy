@@ -87,29 +87,26 @@ public class YouController
 		mo.addAttribute("product", vo);
 		return "0822/productDetail";
 	}
-	
+
 	@RequestMapping("product2")
 	public String product2(Model mo, RedirectAttributes attr)
 	{
 		ProductVO vo = new ProductVO("꿀상품", 30000);
 
-		//mo.addAttribute("vo", vo); //리다이렉트 이동시 데이터 공유 안함
+		// mo.addAttribute("vo", vo); //리다이렉트 이동시 데이터 공유 안함
 		/*
-		 * 해결법1)
-		 * 	String product2(HttpSession session)
-		 * 		-> sesseion.setAttribute("vo", vo);
-		 * 해결법2)
-		 * 	RedirectAttributes사용
-		 * 		-> 리다이렉트 이동시 request공유할 데이터 ( 일회성 데이터 ) 를 표현
+		 * 해결법1) String product2(HttpSession session) -> sesseion.setAttribute("vo",
+		 * vo); 해결법2) RedirectAttributes사용 -> 리다이렉트 이동시 request공유할 데이터 ( 일회성 데이터 ) 를 표현
 		 */
 		attr.addFlashAttribute("vo", vo);
-		
+
 //		return "redirect:0822/productDetail"; 이렇게는 안된다 404 에러
 		return "redirect:/you/lime";
 	}
+
 	@RequestMapping("/lime")
 	public String productDetail()
-	{	
+	{
 		return "0822/productDetail";
 	}
 }
