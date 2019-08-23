@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>호출 테스트</title>
+<title>호출테스트</title>
 </head>
-<%-- doA.jsp --%>
+<%--doA.jsp --%>
 <body>
-	<h3>호출 테스트</h3>
-	doA.jsp!!
+  <h3>호출테스트</h3>
+  doA.jsp!!
 </body>
 </html>

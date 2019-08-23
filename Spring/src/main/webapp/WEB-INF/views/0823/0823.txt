@@ -1,0 +1,30 @@
+
+
+<문제>
+1. /WEB-INF/views/0823/hello.jsp 작성
+                      --->  안녕, SpringFramework~!! 출력
+                      
+2. WeController클래스 작성  
+   ----> 어노테이션 @Controller 등록
+   ----> /Spring/0823/hello  URL요청시   위의 hello.jsp 호출
+   
+3. 0823폴더에 input.jsp 작성  
+            ---> <form action="result">태그내에  <input name="name"> 추가
+            
+4. /Spring/0823/result URL요청시  폼내의 입력된 이름을  콘솔에 출력
+
+5. 0823폴더에 input2.jsp 작성  
+            ---> <form action="result2">태그내에  
+           <input name="name"><input name="age"><input name="job"> 추가
+            
+6. /Spring/0823/result2 URL요청시  폼내의 입력된 이름,직업을  콘솔에 출력
+
+7. calc_form.jsp를 작성하고 계산버튼 클릭시 계산기 폼 밑에 결과값을 출력하시오.
+
+
+
+
+            
+                                
+                                  
+                          

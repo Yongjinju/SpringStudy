@@ -9,15 +9,13 @@
 		<param-value>/WEB-INF/spring/root-context.xml</param-value>
 	</context-param>
 	
-	
-	
 	<!-- Creates the Spring Container shared by all Servlets and Filters -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 
-	<!-- 한글 파라미터 처리 -->
-	<filter>
+    <!-- 한글 파라미터 처리 -->
+    <filter>
       <filter-name>encoding</filter-name>
       <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
       <init-param>
@@ -29,7 +27,8 @@
     <filter-mapping>
       <filter-name>encoding</filter-name>
       <url-pattern>/*</url-pattern>
-    </filter-mapping>
+    </filter-mapping>    
+
 
 	<!-- Processes application requests -->
 	<servlet>

@@ -1,14 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>상품정보출력</title>
 </head>
+<%--productDetail.jsp --%>
 <body>
-	이름 : ${product.name }
-	<br> 가격 : ${product.price } 
-	${product } ${vo}
+  <h3>상품정보출력</h3>
+  <hr>
+  [[[${productVO } ${vo }]]]
 </body>
 </html>

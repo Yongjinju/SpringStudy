@@ -4,11 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>결과 페이지</title>
+<title>결과페이지</title>
 </head>
+<%-- 0822/result.jsp --%>
 <body>
-	<h3>결과</h3>
-	<hr>
-	전달 받은 이름 : ${un }
+  <h3>결과페이지</h3>
+  <hr>
+  전달받은 이름: ${un }
 </body>
 </html>
